@@ -116,7 +116,7 @@ function radians(degrees) {
 function fromShortKey(key) {
   const sourceLayers = key.split(":");
   if (sourceLayers.length > maxLayers) {
-    throw new Error("Only 4 layers allowed");
+    throw new Error("Only " + maxLayers + " layers allowed");
   }
   
   let layers = [];
