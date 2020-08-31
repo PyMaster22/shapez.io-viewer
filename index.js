@@ -3,7 +3,7 @@
  *
  */
 
-const maxLayer = 5;
+const maxLayers = 5;
 
 /** @enum {string} */
 const enumSubShape = {
