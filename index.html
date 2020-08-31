@@ -144,10 +144,30 @@
           for (let i = 0; i < examples.length; ++i) {
             const [key, desc] = examples[i];
             document.write(`
-                <div class="example">
+                <div id="example" class="example">
                     <code>${key}</code><label>${desc}</label>
                     <button onclick='viewShape(\"${key}\")'>View</button>
-                    </div>
+                </div>
+            `);
+          }
+        </script>
+        
+        <h3>More Templates</h3>
+        
+        <script>
+          const templates = [
+            ["CbCbCbRb:CwCwCwCw", "Blueprint"],
+            ["RuCw--Cw:----Ru--", "Logo Shape"],
+            ["RwRwRwRw:CuCuCuCu:CwCwCwCw:--CpRpCp", "💕"],
+            ["CpCpCpCp:CwCw----:CpCp----:CwCw----", "TOR"],
+          ];
+          for (let i = 0; i < templates.length; ++i) {
+            const [key, desc] = templates[i];
+            document.write(`
+                <div id="template" class="example">
+                    <code>${key}</code><label>${desc}</label>
+                    <button onclick='viewShape(\"${key}\")'>View</button>
+                </div>
             `);
           }
         </script>
